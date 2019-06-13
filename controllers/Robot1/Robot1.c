@@ -78,21 +78,21 @@ int main(int argc, char **argv)
      */
   if(pressed_key == WB_KEYBOARD_UP)
   {
-     wb_motor_set_velocity(wheel_right,-60);
-     wb_motor_set_velocity(wheel_left, -60);
+     wb_motor_set_velocity(wheel_right,-6.36);
+     wb_motor_set_velocity(wheel_left, -6.36);
   }
   else if(pressed_key == WB_KEYBOARD_DOWN){
-     wb_motor_set_velocity(wheel_right,10.5);
-     wb_motor_set_velocity(wheel_left, 10.5);
+     wb_motor_set_velocity(wheel_right,.212);
+     wb_motor_set_velocity(wheel_left, .212);
 
   }
   else if(pressed_key == WB_KEYBOARD_RIGHT){
-     wb_motor_set_velocity(wheel_right,5);
-     wb_motor_set_velocity(wheel_left,-5);
+     wb_motor_set_velocity(wheel_right,3);
+     wb_motor_set_velocity(wheel_left,-3);
   }
   else if(pressed_key == WB_KEYBOARD_LEFT){
-     wb_motor_set_velocity(wheel_right,-5);
-     wb_motor_set_velocity(wheel_left,5);
+     wb_motor_set_velocity(wheel_right,-3);
+     wb_motor_set_velocity(wheel_left,3);
   }
   else {
      wb_motor_set_velocity(wheel_right,0);
