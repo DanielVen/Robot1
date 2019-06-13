@@ -87,12 +87,12 @@ int main(int argc, char **argv)
 
   }
   else if(pressed_key == WB_KEYBOARD_RIGHT){
-     wb_motor_set_velocity(wheel_right,3);
-     wb_motor_set_velocity(wheel_left,-3);
+     wb_motor_set_velocity(wheel_right,6.36);
+     wb_motor_set_velocity(wheel_left,-6.36);
   }
   else if(pressed_key == WB_KEYBOARD_LEFT){
-     wb_motor_set_velocity(wheel_right,-3);
-     wb_motor_set_velocity(wheel_left,3);
+     wb_motor_set_velocity(wheel_right,-6.36);
+     wb_motor_set_velocity(wheel_left,6.36);
   }
   else {
      wb_motor_set_velocity(wheel_right,0);
