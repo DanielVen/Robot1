@@ -3,7 +3,7 @@ WorldInfo {
 }
 Viewpoint {
   orientation 0.9997573220416309 0.021190451993013164 0.006021774529025101 5.729307658907624
-  position 0.16718868605072384 0.6103399222914258 0.7315368088299519
+  position 0.2126436213678152 0.6931546662321977 0.8885467424027468
 }
 TexturedBackground {
 }
@@ -61,7 +61,7 @@ Robot {
         }
         RotationalMotor {
           name "motor_right"
-          maxTorque 1
+          maxTorque 0.49
         }
       ]
       endPoint DEF WHEEL1 Solid {
@@ -93,7 +93,7 @@ Robot {
       device [
         RotationalMotor {
           name "motor_left"
-          maxTorque 1
+          maxTorque 0.49
         }
       ]
       endPoint Solid {
@@ -134,6 +134,7 @@ Robot {
   ]
   boundingObject USE GR_BODY
   physics Physics {
+    density 500
   }
   controller "Robot1"
 }
